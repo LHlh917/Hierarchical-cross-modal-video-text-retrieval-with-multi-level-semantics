@@ -1,6 +1,5 @@
 # Hierarchical-cross-modal-video-text-retrieval-with-multi-level-semantics
 
-<a name="depend"/>
 ## Dependencies
 Our model was developed and evaluated using the following package dependencies:
 - PyTorch 1.8.1
@@ -26,8 +25,8 @@ For evaluation, you can change the `batch_size` without affecting results.
 
 <a name="eval-commands"/>
 
-| Dataset | Command | Checkpoint File | t2v R@1 Result |
-|:-----------:|:-----------:| :-----------: | :-----------: |
+| Dataset | Command  |
+|:-----------:|:-----------:|
 |MSR-VTT-9k|`python test.py --exp_name={exp_name} --videos_dir={videos_dir} --batch_size=32 --huggingface --load_epoch=-1 --dataset_name=MSRVTT --msrvtt_train_file=9k`
 |MSR-VTT-7k|`python test.py --exp_name={exp_name} --videos_dir={videos_dir} --batch_size=32 --huggingface --load_epoch=-1 --dataset_name=MSRVTT --msrvtt_train_file=7k`
 |MSVD|`python test.py --exp_name={exp_name} --videos_dir={videos_dir} --batch_size=32 --huggingface --load_epoch=-1 --dataset_name=MSVD`
