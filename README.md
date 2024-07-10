@@ -46,6 +46,5 @@ For each command below, replace `{exp_name}` with your choice name of experiment
 |MSR-VTT-9k|`python train.py --exp_name={exp_name} --videos_dir={videos_dir} --batch_size=32 --noclip_lr=3e-5 --transformer_dropout=0.3 --huggingface --dataset_name=MSRVTT --msrvtt_train_file=9k`|
 |MSR-VTT-7k|`python train.py --exp_name={exp_name} --videos_dir={videos_dir} --batch_size=32 --noclip_lr=1e-5 --transformer_dropout=0.4 --huggingface --dataset_name=MSRVTT --msrvtt_train_file=7k`|
 |MSVD|`python train.py --exp_name={exp_name} --videos_dir={videos_dir} --batch_size=32 --noclip_lr=1e-5 --transformer_dropout=0.4 --huggingface --dataset_name=MSVD`|
-|LSMDC|`python train.py --exp_name={exp_name} --videos_dir={videos_dir} --batch_size=32 --noclip_lr=1e-5 --transformer_dropout=0.3 --huggingface --dataset_name=LSMDC`|
 
 
