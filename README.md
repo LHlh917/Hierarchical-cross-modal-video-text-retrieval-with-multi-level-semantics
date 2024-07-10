@@ -1,29 +1,6 @@
-<p align="center">
-<a href="https://layer6.ai/"><img src="https://github.com/layer6ai-labs/DropoutNet/blob/master/logs/logobox.jpg" width="180"></a>
-</p> 
-
-<div align="center">
-<h1>
-<b>
-X-Pool: Cross-Modal Language-Video Attention for Text-Video Retrieval
-</b>
-</h1>
-<h4>
-<b>
-<a href="https://www.cs.toronto.edu/~satyag/">Satya Krishna Gorti*</a>, <a href="https://www.cs.toronto.edu/~nvouitsis/">Noël Vouitsis*</a>, <a href="https://www.linkedin.com/in/jeremy-ma/">Junwei Ma*</a>, <a href="https://www.linkedin.com/in/keyvangolestan/">Keyvan Golestan</a>, <a href="https://www.cs.toronto.edu/~mvolkovs/">Maksims Volkovs</a>, <a href="https://animesh.garg.tech/">Animesh Garg</a>, <a href="http://www.cs.toronto.edu/~guangweiyu/">Guangwei Yu</a>    
-</b>
-</h4>
-  
-[Paper](https://arxiv.org/abs/2203.15086) | [Project Page & Demo](https://layer6ai-labs.github.io/xpool/)
-</div>
-
-<a name="intro"/>
-
-## Introduction
-This repository contains the official implementation of our **CVPR 2022** paper. It includes both training and evaluation code.
+# Hierarchical-cross-modal-video-text-retrieval-with-multi-level-semantics
 
 <a name="depend"/>
-
 ## Dependencies
 Our model was developed and evaluated using the following package dependencies:
 - PyTorch 1.8.1
@@ -75,17 +52,4 @@ For each command below, replace `{exp_name}` with your choice name of experiment
 |MSVD|`python train.py --exp_name={exp_name} --videos_dir={videos_dir} --batch_size=32 --noclip_lr=1e-5 --transformer_dropout=0.4 --huggingface --dataset_name=MSVD`|
 |LSMDC|`python train.py --exp_name={exp_name} --videos_dir={videos_dir} --batch_size=32 --noclip_lr=1e-5 --transformer_dropout=0.3 --huggingface --dataset_name=LSMDC`|
 
-<a name="train-commands"/>
 
-## Citation
-
-If you find this work useful in your research, please cite the following paper:
-
-```
-@inproceedings{gorti2022xpool,
-  title={X-Pool: Cross-Modal Language-Video Attention for Text-Video Retrieval},
-  author={Gorti, Satya Krishna and Vouitsis, No{\"e}l and Ma, Junwei and Golestan, Keyvan and Volkovs, Maksims and Garg, Animesh and Yu, Guangwei},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2022}
-}
-```
